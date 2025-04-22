@@ -32,7 +32,7 @@ This is the **frontend** of the Weather Monitoring App. It provides a simple and
 2. Start the app:
 
     ```bash
-    poetry run streamlit run app.py
+    poetry run streamlit run Sign_In.py
     ```
 
 ### 🐳 Run with Docker
