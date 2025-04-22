@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "weather-app"
+version = "0.1.0"
+description = "frontend part of weather application"
+authors = ["Evgeny Bobkunov <e.bobkunov@innopolis.university>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+streamlit = ">=1.44.1,<2.0.0"
+pandas = ">=2.2.3,<3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8 = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
