@@ -1,4 +1,3 @@
-import pandas as pd
 import streamlit as st
 
 from utils.mock_data import get_mock_history

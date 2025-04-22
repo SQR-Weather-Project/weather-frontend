@@ -1,3 +1,9 @@
+import random
+from datetime import datetime, timedelta
+
+import pandas as pd
+
+
 def get_mock_weather():
     return {
         "coord": {"lon": 44, "lat": 55},
@@ -25,12 +31,6 @@ def get_mock_weather():
         "name": "Lesogorsk",
         "cod": 200,
     }
-
-
-import random
-from datetime import datetime, timedelta
-
-import pandas as pd
 
 
 def get_mock_history():

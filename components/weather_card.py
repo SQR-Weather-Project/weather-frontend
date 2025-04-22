@@ -15,7 +15,9 @@ def render_weather_card(data):
         f"""
         <div style='display: flex; align-items: center; gap: 1rem;'>
             <img src="{icon_url}" width="60">
-            <div style="font-size: 1.5rem;"><strong>{description}</strong></div>
+            <div style="font-size: 1.5rem;">
+                <strong>{description}</strong>
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
