@@ -12,3 +12,4 @@ password = st.text_input("Repeat password", type="password")
 if st.button("Sign Up"):
     st.success("Registration successful (mock)!")
     st.info("Go to the 'Sign In' section from the sidebar.")
+    
