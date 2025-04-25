@@ -4,6 +4,7 @@ from datetime import datetime
 from pathlib import Path
 import pandas as pd
 
+
 def get_mock_history() -> pd.DataFrame:
     path = Path("utils/history.json")
     with path.open("r", encoding="utf-8") as f:
@@ -27,6 +28,7 @@ def get_mock_history() -> pd.DataFrame:
         })
 
     return pd.DataFrame(records)
+
 
 st.set_page_config(page_title="Weather History", page_icon="📈", layout="centered")
 st.title("📈 Weather History")
@@ -70,23 +72,32 @@ if selected_date != "All":
 
 if not filtered.empty:
     st.markdown("### 📊 Weather Summary")
-    st.caption(f"Showing data for **{selected_city if selected_city != 'All' else 'all cities'}**, **{selected_country if selected_country != 'All' else 'all countries'}** on **{selected_date if selected_date != 'All' else 'all dates'}**.")
-
-    chart_data = filtered[["timestamp", "temp", "humidity"]].set_index("timestamp").rename(columns={
-        "temp": "🌡️ Temp (°C)",
-        "humidity": "💧 Humidity (%)"
-    })
+    st.caption(
+        f"Showing data for "
+        f"**{selected_city if selected_city != 'All' else 'all cities'}**, "
+        f"**{selected_country if selected_country != 'All' else 'all countries'}** on "
+        f"**{selected_date if selected_date != 'All' else 'all dates'}**."
+    )
+    chart_data = (
+        filtered[["timestamp", "temp", "humidity"]]
+        .set_index("timestamp").rename(columns={
+            "temp": "🌡️ Temp (°C)",
+            "humidity": "💧 Humidity (%)"
+        })
+    )
     st.line_chart(chart_data, use_container_width=True)
 
-    st.dataframe(
-        filtered.drop(columns=["timestamp"]).sort_values("date", ascending=False).rename(columns={
-            "date": "📅 Date",
-            "city": "🏙️ City",
+    df_display = (
+        filtered.drop(columns=["timestamp"])
+        .sort_values("date", ascending=False)
+        .rename(columns={
+            "date": "🗕️ Date",
+            "city": "🌇️ City",
             "country": "🌍 Country",
             "temp": "🌡️ Temp (°C)",
             "humidity": "💧 Humidity (%)"
-        }),
-        use_container_width=True
+        })
     )
+    st.dataframe(df_display, use_container_width=True)
 else:
     st.warning("🚫 No data available for the selected filters.")
