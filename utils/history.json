@@ -1,0 +1,1682 @@
+[
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T00:00:00",
+      "temperature": {
+        "value": 298.48,
+        "min": 297.56,
+        "max": 300.05,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 298.74,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 64,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1015,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.62,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.18
+        },
+        "direction": {
+          "value": 349,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 100,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 3.37,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T00:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zacca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T01:00:00",
+      "temperature": {
+        "value": 298.58,
+        "min": 297.66,
+        "max": 300.15,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 298.84,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 65,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1016,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.67,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.28
+        },
+        "direction": {
+          "value": 350,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 99,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 3.27,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T01:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Pocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T02:00:00",
+      "temperature": {
+        "value": 298.68,
+        "min": 297.76,
+        "max": 300.25,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 298.94,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 66,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1017,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.72,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.38
+        },
+        "direction": {
+          "value": 351,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 98,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 3.17,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T02:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zpcca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T03:00:00",
+      "temperature": {
+        "value": 298.78,
+        "min": 297.86,
+        "max": 300.35,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.04,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 67,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1018,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.77,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.48
+        },
+        "direction": {
+          "value": 352,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 97,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 3.07,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T03:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T04:00:00",
+      "temperature": {
+        "value": 298.88,
+        "min": 297.96,
+        "max": 300.45,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.14,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 68,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1019,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.82,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.58
+        },
+        "direction": {
+          "value": 353,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 96,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 2.97,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T04:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T05:00:00",
+      "temperature": {
+        "value": 298.98,
+        "min": 298.06,
+        "max": 300.55,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.24,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 69,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1015,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.87,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.68
+        },
+        "direction": {
+          "value": 354,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 95,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 2.87,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T05:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T06:00:00",
+      "temperature": {
+        "value": 299.08,
+        "min": 298.16,
+        "max": 300.65,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.34,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 70,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1016,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.92,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.78
+        },
+        "direction": {
+          "value": 355,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 94,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 2.77,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T06:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Sacca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T07:00:00",
+      "temperature": {
+        "value": 299.18,
+        "min": 298.26,
+        "max": 300.75,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.44,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 71,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1017,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 0.97,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.88
+        },
+        "direction": {
+          "value": 356,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 93,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 2.67,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T07:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T08:00:00",
+      "temperature": {
+        "value": 299.28,
+        "min": 298.36,
+        "max": 300.85,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.54,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 72,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1018,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.02,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 1.98
+        },
+        "direction": {
+          "value": 357,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 92,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 2.57,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T08:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zopca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T09:00:00",
+      "temperature": {
+        "value": 299.38,
+        "min": 298.46,
+        "max": 300.95,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.64,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 73,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1019,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.07,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.08
+        },
+        "direction": {
+          "value": 358,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 91,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 2.47,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T09:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T10:00:00",
+      "temperature": {
+        "value": 299.48,
+        "min": 298.56,
+        "max": 301.05,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.74,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 64,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1015,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.12,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.18
+        },
+        "direction": {
+          "value": 359,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 100,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 2.37,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T10:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocia",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "Kazan",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T11:00:00",
+      "temperature": {
+        "value": 299.58,
+        "min": 298.66,
+        "max": 301.15,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.84,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 65,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1016,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.17,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.28
+        },
+        "direction": {
+          "value": 360,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 99,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 2.27,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T11:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T12:00:00",
+      "temperature": {
+        "value": 299.68,
+        "min": 298.76,
+        "max": 301.25,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 299.94,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 66,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1017,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.22,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.38
+        },
+        "direction": {
+          "value": 361,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 98,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 2.17,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T12:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "Kazan",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T13:00:00",
+      "temperature": {
+        "value": 299.78,
+        "min": 298.86,
+        "max": 301.35,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.04,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 67,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1018,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.27,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.48
+        },
+        "direction": {
+          "value": 362,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 97,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 2.07,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T13:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T14:00:00",
+      "temperature": {
+        "value": 299.88,
+        "min": 298.96,
+        "max": 301.45,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.14,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 68,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1019,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.32,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.58
+        },
+        "direction": {
+          "value": 363,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 96,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 1.97,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T14:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "Kazan",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T15:00:00",
+      "temperature": {
+        "value": 299.98,
+        "min": 299.06,
+        "max": 301.55,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.24,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 69,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1015,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.37,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.68
+        },
+        "direction": {
+          "value": 364,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 95,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 1.87,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T15:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "Kazan",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T16:00:00",
+      "temperature": {
+        "value": 300.08,
+        "min": 299.16,
+        "max": 301.65,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.34,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 70,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1016,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.42,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.78
+        },
+        "direction": {
+          "value": 365,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 94,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 1.77,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T16:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T17:00:00",
+      "temperature": {
+        "value": 300.18,
+        "min": 299.26,
+        "max": 301.75,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.44,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 71,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1017,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.47,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.88
+        },
+        "direction": {
+          "value": 366,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 93,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 1.67,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T17:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T18:00:00",
+      "temperature": {
+        "value": 300.28,
+        "min": 299.36,
+        "max": 301.85,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.54,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 72,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1018,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.52,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 2.98
+        },
+        "direction": {
+          "value": 367,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 92,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 1.57,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T18:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T19:00:00",
+      "temperature": {
+        "value": 300.38,
+        "min": 299.46,
+        "max": 301.95,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.64,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 73,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1019,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.57,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 3.08
+        },
+        "direction": {
+          "value": 368,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 91,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 1.47,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T19:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T20:00:00",
+      "temperature": {
+        "value": 300.48,
+        "min": 299.56,
+        "max": 302.05,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.74,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 64,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1015,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.62,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 3.18
+        },
+        "direction": {
+          "value": 369,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 100,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 1.37,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T20:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T21:00:00",
+      "temperature": {
+        "value": 300.58,
+        "min": 299.66,
+        "max": 302.15,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.84,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 65,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1016,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.67,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 3.28
+        },
+        "direction": {
+          "value": 370,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 99,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 10000
+      },
+      "precipitation": {
+        "value": 1.27,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T21:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T22:00:00",
+      "temperature": {
+        "value": 300.68,
+        "min": 299.76,
+        "max": 302.25,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 300.94,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 66,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1017,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.72,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 3.38
+        },
+        "direction": {
+          "value": 371,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 98,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9900
+      },
+      "precipitation": {
+        "value": 1.17,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T22:00:00"
+      }
+    },
+    {
+      "city": {
+        "id": 3163858,
+        "name": "Zocca",
+        "coord": {
+          "lon": 10.99,
+          "lat": 44.34
+        },
+        "country": "IT",
+        "timezone": 7200,
+        "sun": {
+          "rise": "2022-08-30T04:36:27",
+          "set": "2022-08-30T17:57:28"
+        }
+      },
+      "dt": "2022-08-30T23:00:00",
+      "temperature": {
+        "value": 300.78,
+        "min": 299.86,
+        "max": 302.35,
+        "unit": "kelvin"
+      },
+      "feels_like": {
+        "value": 301.04,
+        "unit": "kelvin"
+      },
+      "humidity": {
+        "value": 67,
+        "unit": "%"
+      },
+      "pressure": {
+        "value": 1018,
+        "unit": "hPa"
+      },
+      "wind": {
+        "speed": {
+          "value": 1.77,
+          "unit": "m/s",
+          "name": "Calm"
+        },
+        "gusts": {
+          "value": 3.48
+        },
+        "direction": {
+          "value": 372,
+          "code": "N",
+          "name": "North"
+        }
+      },
+      "clouds": {
+        "value": 97,
+        "name": "overcast clouds"
+      },
+      "visibility": {
+        "value": 9800
+      },
+      "precipitation": {
+        "value": 1.07,
+        "mode": "rain",
+        "unit": "1h"
+      },
+      "weather": {
+        "number": 501,
+        "value": "moderate rain",
+        "icon": "10d"
+      },
+      "lastupdate": {
+        "value": "2022-08-30T23:00:00"
+      }
+    }
+  ]
