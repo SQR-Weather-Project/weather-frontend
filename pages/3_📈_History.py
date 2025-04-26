@@ -1,8 +1,9 @@
-import streamlit as st
 import json
 from datetime import datetime
 from pathlib import Path
+
 import pandas as pd
+import streamlit as st
 
 
 def get_mock_history() -> pd.DataFrame:
@@ -12,25 +13,32 @@ def get_mock_history() -> pd.DataFrame:
 
     records = []
     for entry in raw:
-        timestamp = datetime.strptime(entry["lastupdate"]["value"], "%Y-%m-%dT%H:%M:%S")
-        city_data = entry["city"]
-        city = city_data["name"]
-        country = city_data["country"]
-        temp = entry["temperature"]["value"]
-        humidity = entry["humidity"]["value"]
+        dt_unix = entry.get("dt")
+        timestamp = datetime.fromtimestamp(dt_unix)
+        date_str = timestamp.date().isoformat()
+        time_str = timestamp.strftime("%H:%M:%S")
+        city = entry.get("name")
+        country = entry.get("sys", {}).get("country")
+        main = entry.get("main", {})
+        temp = main.get("temp")
+        humidity = main.get("humidity")
         records.append({
             "timestamp": timestamp,
-            "date": timestamp.date().isoformat(),
+            "date": date_str,
+            "time": time_str,
             "city": city,
             "country": country,
-            "temp": round(temp - 273.15, 2),
+            "temp": temp,
             "humidity": humidity
         })
 
     return pd.DataFrame(records)
 
 
-st.set_page_config(page_title="Weather History", page_icon="📈", layout="centered")
+st.set_page_config(
+    page_title="Weather History",
+    page_icon="📈",
+    layout="centered")
 st.title("📈 Weather History")
 
 try:
@@ -40,27 +48,35 @@ except Exception as e:
     st.stop()
 
 with st.expander("🔎 Filters", expanded=True):
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
 
     with col1:
         countries = ["All"] + sorted(data["country"].unique())
         selected_country = st.selectbox("🌍 Country", countries)
 
     with col2:
-        if selected_country == "All":
-            cities = sorted(data["city"].unique())
-        else:
-            cities = sorted(data[data["country"] == selected_country]["city"].unique())
-        city_options = ["All"] + cities
+        city_filter = (
+            data if selected_country == "All"
+            else data[data["country"] == selected_country]
+        )
+        city_options = ["All"] + sorted(city_filter["city"].unique())
         selected_city = st.selectbox("🌆 City", city_options)
 
     with col3:
-        if selected_city == "All":
-            dates = sorted(data["date"].unique())
-        else:
-            dates = sorted(data[data["city"] == selected_city]["date"].unique())
-        date_options = ["All"] + dates
+        date_filter = (
+            city_filter if selected_city == "All"
+            else city_filter[city_filter["city"] == selected_city]
+        )
+        date_options = ["All"] + sorted(date_filter["date"].unique())
         selected_date = st.selectbox("📅 Date", date_options)
+
+    with col4:
+        time_filter = (
+            date_filter if selected_date == "All"
+            else date_filter[date_filter["date"] == selected_date]
+        )
+        time_options = ["All"] + sorted(time_filter["time"].unique())
+        selected_time = st.selectbox("🕒 Time", time_options)
 
 filtered = data.copy()
 if selected_country != "All":
@@ -69,14 +85,20 @@ if selected_city != "All":
     filtered = filtered[filtered["city"] == selected_city]
 if selected_date != "All":
     filtered = filtered[filtered["date"] == selected_date]
+if selected_time != "All":
+    filtered = filtered[filtered["time"] == selected_time]
 
 if not filtered.empty:
     st.markdown("### 📊 Weather Summary")
     st.caption(
         f"Showing data for "
         f"**{selected_city if selected_city != 'All' else 'all cities'}**, "
-        f"**{selected_country if selected_country != 'All' else 'all countries'}** on "
-        f"**{selected_date if selected_date != 'All' else 'all dates'}**."
+        f"**{(
+            selected_country if selected_country != 'All'
+            else 'all countries'
+            )}** "
+        f"on **{selected_date if selected_date != 'All' else 'all dates'}** "
+        f"at **{selected_time if selected_time != 'All' else 'all times'}**."
     )
     chart_data = (
         filtered[["timestamp", "temp", "humidity"]]
@@ -89,10 +111,11 @@ if not filtered.empty:
 
     df_display = (
         filtered.drop(columns=["timestamp"])
-        .sort_values("date", ascending=False)
+        .sort_values(["date", "time"], ascending=[False, False])
         .rename(columns={
-            "date": "🗕️ Date",
-            "city": "🌇️ City",
+            "date": "📅 Date",
+            "time": "🕒 Time",
+            "city": "🌇 City",
             "country": "🌍 Country",
             "temp": "🌡️ Temp (°C)",
             "humidity": "💧 Humidity (%)"
