@@ -1,5 +1,6 @@
 import streamlit as st
-from components.notifications import send_push, send_alert
+
+from components.notifications import send_alert, send_push
 
 st.title("Streamlit Push Notifications 📢")
 st.divider()

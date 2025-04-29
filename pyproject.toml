@@ -15,6 +15,7 @@ pandas = ">=2.2.3,<3.0.0"
 black = "^25.1.0"
 flake8 = "^7.2.0"
 bandit = "^1.8.3"
+isort = "^6.0.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
