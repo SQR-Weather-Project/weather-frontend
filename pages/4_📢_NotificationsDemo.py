@@ -30,7 +30,12 @@ if st.button("Push"):
     if not title or not body:
         st.error("Title and body must not be empty.")
     else:
-        send_push(title=title, body=body, icon_path=icon_path, sound_path=sound_path)
+        send_push(
+            title=title,
+            body=body,
+            icon_path=icon_path,
+            sound_path=sound_path
+        )
         st.success("Push notification sent!")
 
 if st.button("Alert"):
