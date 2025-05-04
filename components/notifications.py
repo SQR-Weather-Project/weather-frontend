@@ -21,8 +21,16 @@ def send_push(
         f"var {k} = {json.dumps(v)};" for k, v in js_vars.items()
     )
 
+    ws = """
+    const ws = new WebSocket("ws://localhost:8000/ws/notify");
+    ws.onmessage = function(event) {
+        console.log("🔔 " + event.data);
+    };
+    """
+
     script = f"""
     {variables}
+
     var notificationSent = false;
 
     Notification.requestPermission().then(perm => {{
@@ -44,6 +52,8 @@ def send_push(
     }}).catch(error => {{
         console.error('Notification permission error:', error);
     }});
+    
+    {ws}
     """
 
     html(f"<script>{script}</script>", width=0, height=0)
