@@ -54,10 +54,10 @@ jobs:
 
       - name: Run Streamlit app in background
         run: |
-          streamlit run Sign_In.py --server.port 8501 &
+          poetry run streamlit run Sign_In.py --server.port 8501 &
           sleep 10
 
       - name: Run Pytest Selenium tests
-        run: pytest tests/
+        run: poetry run pytest tests/
         env:
           CHROME_DRIVER_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
