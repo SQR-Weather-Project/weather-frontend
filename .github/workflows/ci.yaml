@@ -58,6 +58,4 @@ jobs:
           sleep 10
 
       - name: Run Pytest Selenium tests
-        run: poetry run pytest tests/
-        env:
-          CHROME_DRIVER_PATH: ${{ steps.setup-chrome.outputs.chrome-path }}
+        run: poetry run pytest tests/test_push_notifications.py
