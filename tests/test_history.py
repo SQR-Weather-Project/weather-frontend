@@ -5,8 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def test_history():
-    driver = webdriver.Chrome(service=Service())
+def test_history(driver):
     driver.get("http://localhost:8501/History")
 
     wait = WebDriverWait(driver, 15)
@@ -65,4 +64,3 @@ def test_history():
     assert element, "Expected text not found in the caption container!"
 
     print("✅ Test passed: The expected caption is visible.")
-    driver.quit()

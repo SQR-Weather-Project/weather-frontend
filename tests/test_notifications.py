@@ -9,8 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def test_notification_settings():
-    driver = webdriver.Chrome(service=Service())
+def test_notification_settings(driver):
     driver.get("http://localhost:8501/Notifications")
 
     wait = WebDriverWait(driver, 15)
@@ -83,8 +82,6 @@ def test_notification_settings():
     )
     assert "Settings saved" in success.text
     print("✅ Notification settings test passed!")
-
-    driver.quit()
 
 
 def move_slider_to_value(driver, slider_element, target_value):

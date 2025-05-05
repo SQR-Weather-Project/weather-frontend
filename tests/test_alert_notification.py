@@ -4,8 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def test_alert_notifications():
-    driver = webdriver.Chrome()
+def test_alert_notifications(driver):
     driver.get("http://localhost:8501/NotificationsDemo")
     wait = WebDriverWait(driver, 10)
     fill_title = wait.until(
@@ -44,6 +43,3 @@ def test_alert_notifications():
 
     except Exception as e:
         print("❌ Alert test failed:", e)
-
-    finally:
-        driver.quit()

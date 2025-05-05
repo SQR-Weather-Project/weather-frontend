@@ -4,8 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-def test_sign_up():
-    driver = webdriver.Chrome()
+def test_sign_up(driver):
     driver.get("http://localhost:8501/SignUp")
 
     wait = WebDriverWait(driver, 10)
@@ -56,5 +55,3 @@ def test_sign_up():
         print("✅ Registration test passed!")
     except Exception as e:
         print("❌ Registration test failed:", e)
-    finally:
-        driver.quit()
