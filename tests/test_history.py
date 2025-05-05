@@ -1,5 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -12,7 +10,8 @@ def test_history(driver):
 
     country_select = wait.until(
         EC.presence_of_element_located(
-            (By.XPATH, "//label[contains(., 'Country')]/following-sibling::div")
+            (By.XPATH,
+             "//label[contains(., 'Country')]/following-sibling::div")
         )
     )
     country_select.click()
@@ -39,7 +38,8 @@ def test_history(driver):
     )
     date_select.click()
     option_2025_04_22 = wait.until(
-        EC.visibility_of_element_located((By.XPATH, "//div[text()='2025-04-22']"))
+        EC.visibility_of_element_located((By.XPATH,
+                                          "//div[text()='2025-04-22']"))
     )
     option_2025_04_22.click()
 

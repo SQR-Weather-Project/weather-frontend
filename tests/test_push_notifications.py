@@ -10,14 +10,16 @@ def test_push_notifications(driver):
 
     fill_title = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//label[contains(., 'Title')]/following-sibling::div//input")
+            (By.XPATH,
+             "//label[contains(., 'Title')]/following-sibling::div//input")
         )
     )
     fill_title.send_keys("New Notification")
 
     fill_body = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//label[contains(., 'Body')]/following-sibling::div//input")
+            (By.XPATH,
+             "//label[contains(., 'Body')]/following-sibling::div//input")
         )
     )
     fill_body.send_keys("New Body")
@@ -27,7 +29,8 @@ def test_push_notifications(driver):
     )
     icon_label.click()
 
-    push_button = driver.find_element(By.XPATH, '//button[normalize-space()="Push"]')
+    push_button = driver.find_element(By.XPATH,
+                                      '//button[normalize-space()="Push"]')
     push_button.click()
 
     try:

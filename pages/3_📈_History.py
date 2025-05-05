@@ -37,7 +37,8 @@ def get_mock_history() -> pd.DataFrame:
     return pd.DataFrame(records)
 
 
-st.set_page_config(page_title="Weather History", page_icon="📈", layout="centered")
+st.set_page_config(page_title="Weather History",
+                   page_icon="📈", layout="centered")
 st.title("📈 Weather History")
 
 try:

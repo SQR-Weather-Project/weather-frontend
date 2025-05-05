@@ -1,4 +1,3 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -9,13 +8,15 @@ def test_alert_notifications(driver):
     wait = WebDriverWait(driver, 10)
     fill_title = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//label[contains(., 'Title')]/following-sibling::div//input")
+            (By.XPATH,
+             "//label[contains(., 'Title')]/following-sibling::div//input")
         )
     )
     fill_title.send_keys("New Notification")
     fill_body = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//label[contains(., 'Body')]/following-sibling::div//input")
+            (By.XPATH,
+             "//label[contains(., 'Body')]/following-sibling::div//input")
         )
     )
     fill_body.send_keys("New Body")
@@ -23,7 +24,8 @@ def test_alert_notifications(driver):
         EC.element_to_be_clickable((By.XPATH, "//label[.//p[text()='Icon:']]"))
     )
     icon_label.click()
-    alert_button = driver.find_element(By.XPATH, '//button[normalize-space()="Alert"]')
+    alert_button = driver.find_element(By.XPATH,
+                                       '//button[normalize-space()="Alert"]')
     alert_button.click()
     try:
         WebDriverWait(driver, 10).until(EC.alert_is_present())

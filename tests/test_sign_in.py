@@ -1,4 +1,3 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,21 +10,24 @@ def test_sign_in(driver):
 
     fill_username = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//label[contains(., 'Username')]/following-sibling::div//input")
+            (By.XPATH,
+             "//label[contains(., 'Username')]/following-sibling::div//input")
         )
     )
     fill_username.send_keys("bogapova.alia@gmail.com")
 
     fill_location = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//label[contains(., 'Location')]/following-sibling::div//input")
+            (By.XPATH,
+             "//label[contains(., 'Location')]/following-sibling::div//input")
         )
     )
     fill_location.send_keys("Kazan")
 
     fill_password = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//label[contains(., 'Password')]/following-sibling::div//input")
+            (By.XPATH,
+             "//label[contains(., 'Password')]/following-sibling::div//input")
         )
     )
     fill_password.send_keys("1234pass")
