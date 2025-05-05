@@ -17,7 +17,7 @@ hum_values = ["%", 50, 10, 100]
 measurement_value = {
     "Temperature": temp_values,
     "Pressure": press_values,
-    "Humidity": hum_values
+    "Humidity": hum_values,
 }
 
 temp_threshold = st.number_input(
@@ -25,8 +25,8 @@ temp_threshold = st.number_input(
     ({measurement_value[selected_option][0]})",
     value=measurement_value[selected_option][1],
     min_value=measurement_value[selected_option][2],
-    max_value=measurement_value[selected_option][3]
-    )
+    max_value=measurement_value[selected_option][3],
+)
 
 cities = ["Kazan", "Innopolis"]
 selected_option = st.selectbox("Select a city (optional)", cities)
