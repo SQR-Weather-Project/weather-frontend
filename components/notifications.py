@@ -17,9 +17,8 @@ def send_push(
         "audio": sound_path,
         "tag": tag,
     }
-    variables = "\n".join(
-        f"var {k} = {json.dumps(v)};" for k, v in js_vars.items()
-    )
+    variables = "\n". \
+        join(f"var {k} = {json.dumps(v)};" for k, v in js_vars.items())
 
     script = f"""
     {variables}
@@ -51,8 +50,4 @@ def send_push(
 
 def send_alert(message: str) -> None:
     safe_message = json.dumps(message)
-    html(
-        f"<script>window.alert({safe_message});</script>",
-        width=0,
-        height=0
-    )
+    html(f"<script>window.alert({safe_message});</script>", width=0, height=0)

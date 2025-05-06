@@ -22,23 +22,23 @@ def get_mock_history() -> pd.DataFrame:
         main = entry.get("main", {})
         temp = main.get("temp")
         humidity = main.get("humidity")
-        records.append({
-            "timestamp": timestamp,
-            "date": date_str,
-            "time": time_str,
-            "city": city,
-            "country": country,
-            "temp": temp,
-            "humidity": humidity
-        })
+        records.append(
+            {
+                "timestamp": timestamp,
+                "date": date_str,
+                "time": time_str,
+                "city": city,
+                "country": country,
+                "temp": temp,
+                "humidity": humidity,
+            }
+        )
 
     return pd.DataFrame(records)
 
 
-st.set_page_config(
-    page_title="Weather History",
-    page_icon="📈",
-    layout="centered")
+st.set_page_config(page_title="Weather History",
+                   page_icon="📈", layout="centered")
 st.title("📈 Weather History")
 
 try:
@@ -56,7 +56,8 @@ with st.expander("🔎 Filters", expanded=True):
 
     with col2:
         city_filter = (
-            data if selected_country == "All"
+            data
+            if selected_country == "All"
             else data[data["country"] == selected_country]
         )
         city_options = ["All"] + sorted(city_filter["city"].unique())
@@ -64,7 +65,8 @@ with st.expander("🔎 Filters", expanded=True):
 
     with col3:
         date_filter = (
-            city_filter if selected_city == "All"
+            city_filter
+            if selected_city == "All"
             else city_filter[city_filter["city"] == selected_city]
         )
         date_options = ["All"] + sorted(date_filter["date"].unique())
@@ -72,7 +74,8 @@ with st.expander("🔎 Filters", expanded=True):
 
     with col4:
         time_filter = (
-            date_filter if selected_date == "All"
+            date_filter
+            if selected_date == "All"
             else date_filter[date_filter["date"] == selected_date]
         )
         time_options = ["All"] + sorted(time_filter["time"].unique())
@@ -102,24 +105,24 @@ if not filtered.empty:
     )
     chart_data = (
         filtered[["timestamp", "temp", "humidity"]]
-        .set_index("timestamp").rename(columns={
-            "temp": "🌡️ Temp (°C)",
-            "humidity": "💧 Humidity (%)"
-        })
+        .set_index("timestamp")
+        .rename(columns={"temp": "🌡️ Temp (°C)", "humidity": "💧 Humidity (%)"})
     )
     st.line_chart(chart_data, use_container_width=True)
 
     df_display = (
         filtered.drop(columns=["timestamp"])
         .sort_values(["date", "time"], ascending=[False, False])
-        .rename(columns={
-            "date": "📅 Date",
-            "time": "🕒 Time",
-            "city": "🌇 City",
-            "country": "🌍 Country",
-            "temp": "🌡️ Temp (°C)",
-            "humidity": "💧 Humidity (%)"
-        })
+        .rename(
+            columns={
+                "date": "📅 Date",
+                "time": "🕒 Time",
+                "city": "🌇 City",
+                "country": "🌍 Country",
+                "temp": "🌡️ Temp (°C)",
+                "humidity": "💧 Humidity (%)",
+            }
+        )
     )
     st.dataframe(df_display, use_container_width=True)
 else:
