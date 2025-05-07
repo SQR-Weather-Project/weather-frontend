@@ -5,6 +5,11 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
+from streamlit_local_storage import LocalStorage
+import requests
+
+from utils.config import BACKEND_URL
+
 
 def get_mock_history() -> pd.DataFrame:
     path = Path("utils/history.json")
@@ -41,48 +46,63 @@ st.set_page_config(
     layout="centered")
 st.title("📈 Weather History")
 
+localS = LocalStorage()
+token = localS.getItem("weather_token")
+telegram_id = localS.getItem("weather_telegram_id")
+auth_token = localS.getItem("weather_auth_token")
+
+print(token, telegram_id, auth_token)
+
+raw_list = []
 try:
-    data = get_mock_history()
+    city = ""
+    limit = 10
+
+    params = {
+        "user_token": auth_token,
+        "city": city,
+        "limit": limit
+    }
+
+    resp = requests.get(f"{BACKEND_URL}/weather/history", params=params)
+    resp.raise_for_status()
+    raw_list = resp.json()["history"]
 except Exception as e:
     st.error(f"⚠️ Failed to load data: {e}")
     st.stop()
 
+records = []
+print(raw_list)
+
+for entry in raw_list:
+    ts = datetime.fromtimestamp(entry["time"])
+    records.append({
+        "timestamp": ts,
+        "date": ts.date().isoformat(),
+        "time": ts.strftime("%H:%M:%S"),
+        "temperature": entry["temperature"],
+        "feels_like": entry["feels_like"],
+        "pressure": entry["pressure"],
+        "humidity": entry["humidity"],
+    })
+data = pd.DataFrame(records)
+
 with st.expander("🔎 Filters", expanded=True):
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2 = st.columns(2)
 
     with col1:
-        countries = ["All"] + sorted(data["country"].unique())
-        selected_country = st.selectbox("🌍 Country", countries)
-
-    with col2:
-        city_filter = (
-            data if selected_country == "All"
-            else data[data["country"] == selected_country]
-        )
-        city_options = ["All"] + sorted(city_filter["city"].unique())
-        selected_city = st.selectbox("🌆 City", city_options)
-
-    with col3:
-        date_filter = (
-            city_filter if selected_city == "All"
-            else city_filter[city_filter["city"] == selected_city]
-        )
-        date_options = ["All"] + sorted(date_filter["date"].unique())
+        date_options = ["All"] + sorted(data["date"].unique())
         selected_date = st.selectbox("📅 Date", date_options)
 
-    with col4:
+    with col2:
         time_filter = (
-            date_filter if selected_date == "All"
-            else date_filter[date_filter["date"] == selected_date]
+            data if selected_date == "All"
+            else data[data["date"] == selected_date]
         )
         time_options = ["All"] + sorted(time_filter["time"].unique())
         selected_time = st.selectbox("🕒 Time", time_options)
 
 filtered = data.copy()
-if selected_country != "All":
-    filtered = filtered[filtered["country"] == selected_country]
-if selected_city != "All":
-    filtered = filtered[filtered["city"] == selected_city]
 if selected_date != "All":
     filtered = filtered[filtered["date"] == selected_date]
 if selected_time != "All":
@@ -92,18 +112,14 @@ if not filtered.empty:
     st.markdown("### 📊 Weather Summary")
     st.caption(
         f"Showing data for "
-        f"**{selected_city if selected_city != 'All' else 'all cities'}**, "
-        f"**{(
-            selected_country if selected_country != 'All'
-            else 'all countries'
-            )}** "
-        f"on **{selected_date if selected_date != 'All' else 'all dates'}** "
+        f"**{selected_date if selected_date != 'All' else 'all dates'}** "
         f"at **{selected_time if selected_time != 'All' else 'all times'}**."
     )
     chart_data = (
-        filtered[["timestamp", "temp", "humidity"]]
-        .set_index("timestamp").rename(columns={
-            "temp": "🌡️ Temp (°C)",
+        filtered[["time", "temperature", "humidity"]]
+        .set_index("time")
+        .rename(columns={
+            "temperature": "🌡️ Temp (°C)",
             "humidity": "💧 Humidity (%)"
         })
     )
@@ -115,8 +131,6 @@ if not filtered.empty:
         .rename(columns={
             "date": "📅 Date",
             "time": "🕒 Time",
-            "city": "🌇 City",
-            "country": "🌍 Country",
             "temp": "🌡️ Temp (°C)",
             "humidity": "💧 Humidity (%)"
         })
