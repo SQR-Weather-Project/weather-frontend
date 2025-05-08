@@ -58,4 +58,7 @@ jobs:
           sleep 10
 
       - name: Run Pytest Selenium tests
-        run: poetry run pytest tests/
+        run: poetry run coverage run -m pytest tests/
+
+      - name: Test coverage
+        run: poetry run coverage report --fail-under=60

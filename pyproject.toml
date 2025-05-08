@@ -11,6 +11,7 @@ python = ">=3.12"
 streamlit = ">=1.44.1,<2.0.0"
 pandas = ">=2.2.3,<3.0.0"
 streamlit-local-storage = "^0.0.25"
+coverage = "^7.8.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
