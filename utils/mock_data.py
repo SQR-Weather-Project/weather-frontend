@@ -8,8 +8,7 @@ def get_mock_weather():
     return {
         "coord": {"lon": 44, "lat": 55},
         "weather": [
-            {"id": 803, "main": "Clouds",
-             "description": "broken clouds", "icon": "04d"}
+            {"id": 803, "main": "Clouds", "description": "broken clouds", "icon": "04d"}
         ],
         "base": "stations",
         "main": {
