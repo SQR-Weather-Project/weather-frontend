@@ -1,6 +1,6 @@
 import streamlit as st
 
-from components.notifications import send_push
+from components.notifications import send_alert, send_push
 
 st.title("Streamlit Push Notifications 📢")
 st.divider()
@@ -26,7 +26,7 @@ sound_path = get_asset_path(
 )
 
 if st.button("Push"):
-    if not title or not user_id:
+    if not title or not body:
         st.error("Title and body must not be empty.")
     else:
         send_push(title=title, body=body,
